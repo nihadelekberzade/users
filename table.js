@@ -24,6 +24,9 @@ const item = `
 for (let i = 0; i < 9; i++) {
   userList.innerHTML += item;
 }
+document.querySelector('.createUser').addEventListener('click', () => {
+  document.querySelector('.sidebar--create-user').classList.add('sidebar--active');
+})
 const addEventlisteners = () => {
   document.querySelectorAll('.settings-menu__item--view').forEach(e => {
     e.addEventListener('click', () => {
@@ -38,7 +41,6 @@ const addEventlisteners = () => {
 }
 
 addEventlisteners();
-
 document.querySelector('#viewMoreBtn').addEventListener('click', () => {
   for (let i = 0; i < 10; i++) {
     userList.innerHTML += item;
