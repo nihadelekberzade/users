@@ -9,133 +9,138 @@
   </head>
   <body>
     <div class="sidebar sidebar--create-user">
-      <h2 class="section-title">User Properties</h2>
-      <div class="form">
-        <div class="input-field">
-          <label for="voen">VÖEN</label>
-          <input type="text" id="voen" />
-        </div>
-        <div class="input-field input-field--checkbox">
-          <label for="status">Status</label>
-          <input type="checkbox" id="status" />
-        </div>
-        <div class="input-field input-field--select">
-          <label for="status">Type</label>
-          <select name="type" id="type">
-            <option value="2" selected>2</option>
-            <option value="8">8</option>
-            <option value="18">18</option>
-          </select>
-        </div>
-        <div class="input-field">
-          <label for="name">Display Name</label>
-          <input type="text" id="name" />
-        </div>
-        <div class="input-field">
-          <label for="address">Object address</label>
-          <input type="text" id="address" />
-        </div>
-        <div class="input-field">
-          <label for="cachebox">Cachebox Factory Number</label>
-          <input type="text" id="cachebox" />
-        </div>
-        <div class="input-field">
-          <label for="paid">Paid at</label>
-          <input type="date" id="paid" />
-        </div>
-        <div class="input-field">
-          <label for="expire">Expire at</label>
-          <input type="date" id="expire" />
-        </div>
-        <div class="input-field">
-          <label for="note">Note</label>
-          <input type="text" id="note" />
-        </div>
-
-        <div class="buttons">
-          <button class="btn btn--primary">Create User</button>
-          <button class="btn btn--secondary" id="closeCreateSidebar">Cancel</button>
+      <h2 class="sidebar__title">User Properties</h2>
+      <div class="sidebar__inner">
+        <div class="form">
+          <div class="input-field">
+            <label for="voen">VÖEN</label>
+            <input type="text" id="voen" />
+          </div>
+          <div class="input-field input-field--checkbox">
+            <label for="status">Status</label>
+            <input type="checkbox" id="status" />
+          </div>
+          <div class="input-field input-field--select">
+            <label for="status">Type</label>
+            <select name="type" id="type">
+              <option value="2" selected>2</option>
+              <option value="8">8</option>
+              <option value="18">18</option>
+            </select>
+          </div>
+          <div class="input-field">
+            <label for="name">Display Name</label>
+            <input type="text" id="name" />
+          </div>
+          <div class="input-field">
+            <label for="address">Object address</label>
+            <input type="text" id="address" />
+          </div>
+          <div class="input-field">
+            <label for="cachebox">Cachebox Factory Number</label>
+            <input type="text" id="cachebox" />
+          </div>
+          <div class="input-field">
+            <label for="paid">Paid at</label>
+            <input type="date" id="paid" />
+          </div>
+          <div class="input-field">
+            <label for="expire">Expire at</label>
+            <input type="date" id="expire" />
+          </div>
+          <div class="input-field">
+            <label for="note">Note</label>
+            <input type="text" id="note" />
+          </div>
+          <div class="buttons">
+            <button class="btn btn--primary">Create User</button>
+            <button class="btn btn--secondary" id="closeCreateSidebar">Cancel</button>
+          </div>
         </div>
       </div>
     </div>
     <div class="sidebar sidebar--edit-user">
-      <h2 class="section-title">User Properties</h2>
-      <div class="form">
-        <div class="input-field">
-          <label for="voen">VÖEN</label>
-          <input type="text" id="voen" />
-        </div>
-        <div class="input-field">
-          <label for="name">Display Name</label>
-          <input type="text" id="name" />
-        </div>
-        <div class="input-field">
-          <label for="address">Object address</label>
-          <input type="text" id="address" />
-        </div>
-        <div class="input-field">
-          <label for="address">Cachebox Factory Number</label>
-          <input type="text" id="address" />
-        </div>
-        <div class="input-field">
-          <label for="address">Paid at</label>
-          <input type="date" id="address" />
-        </div>
-        <div class="input-field">
-          <label for="address">Expire at</label>
-          <input type="date" id="address" />
-        </div>
-        <div class="input-field">
-          <label for="address">Note</label>
-          <input type="text" id="address" />
-        </div>
-        <div class="buttons">
-          <button class="btn btn--primary">Publish Changes</button>
-          <button class="btn btn--secondary" id="closeEditSidebar">Cancel</button>
+      <h2 class="sidebar__title">User Properties</h2>
+      <div class="sidebar__inner">
+        <div class="form">
+          <div class="input-field">
+            <label for="voen">VÖEN</label>
+            <input type="text" id="voen" />
+          </div>
+          <div class="input-field">
+            <label for="name">Display Name</label>
+            <input type="text" id="name" />
+          </div>
+          <div class="input-field">
+            <label for="address">Object address</label>
+            <input type="text" id="address" />
+          </div>
+          <div class="input-field">
+            <label for="address">Cachebox Factory Number</label>
+            <input type="text" id="address" />
+          </div>
+          <div class="input-field">
+            <label for="address">Paid at</label>
+            <input type="date" id="address" />
+          </div>
+          <div class="input-field">
+            <label for="address">Expire at</label>
+            <input type="date" id="address" />
+          </div>
+          <div class="input-field">
+            <label for="address">Note</label>
+            <input type="text" id="address" />
+          </div>
+          <div class="buttons">
+            <button class="btn btn--primary">Publish Changes</button>
+            <button class="btn btn--secondary" id="closeEditSidebar">Cancel</button>
+          </div>
         </div>
       </div>
     </div>
     <div class="sidebar sidebar--view-user">
       <div class="sidebar__header">
-        <h2 class="sidebar__title">samir</h2>
+        <h2 class="sidebar-title">samir</h2>
         <button class="btn btn--secondary" id="swipeToEdit">Edit</button>
       </div>
-      <div class="sidebar__groups">
-        <div class="group">
-          <p class="group__label">Name</p>
-          <p class="group__text">username99</p>
-        </div>
-        <div class="group">
-          <p class="group__label">Status</p>
-          <p class="group__text">active</p>
-        </div>
-        <div class="group">
-          <p class="group__label">Type</p>
-          <p class="group__text">active</p>
-        </div>
-        <div class="group">
-          <p class="group__label">Company name</p>
-          <p class="group__text">step</p>
-        </div>
-        <div class="group">
-          <p class="group__label">Object Address</p>
-          <p class="group__text">baku</p>
-        </div>
-        <div class="group">
-          <p class="group__label">Factory Number</p>
-          <p class="group__text">123121</p>
-        </div>
-        <div class="group">
-          <p class="group__label">Paid</p>
-          <p class="group__text">1/02/2021</p>
-        </div>
-        <div class="group">
-          <p class="group__label">Expire</p>
-          <p class="group__text">1/02/2021</p>
-        </div>
-        <div class="group">
-          <p class="group__label">Note</p>
-          <p class="group__text">salam aleykum</p>
+      <div class="sidebar__inner">
+        <div class="sidebar__groups">
+          <div class="group">
+            <p class="group__label">Name</p>
+            <p class="group__text">username99</p>
+          </div>
+          <div class="group">
+            <p class="group__label">Status</p>
+            <p class="group__text">active</p>
+          </div>
+          <div class="group">
+            <p class="group__label">Type</p>
+            <p class="group__text">active</p>
+          </div>
+          <div class="group">
+            <p class="group__label">Company name</p>
+            <p class="group__text">step</p>
+          </div>
+          <div class="group">
+            <p class="group__label">Object Address</p>
+            <p class="group__text">baku</p>
+          </div>
+          <div class="group">
+            <p class="group__label">Factory Number</p>
+            <p class="group__text">123121</p>
+          </div>
+          <div class="group">
+            <p class="group__label">Paid</p>
+            <p class="group__text">1/02/2021</p>
+          </div>
+          <div class="group">
+            <p class="group__label">Expire</p>
+            <p class="group__text">1/02/2021</p>
+          </div>
+          <div class="group">
+            <p class="group__label">Note</p>
+            <p class="group__text">salam aleykum</p>
+          </div>
         </div>
       </div>
       <button class="btn btn--secondary" id="closeViewSidebar">Close</button>
