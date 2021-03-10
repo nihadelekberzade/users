@@ -11,5 +11,5 @@ document.querySelector('#swipeToEdit').addEventListener('click', () => {
     document.querySelector('.sidebar--view-user').classList.remove('sidebar--active');
     setTimeout(() => {
         document.querySelector('.sidebar--edit-user').classList.add('sidebar--active');
-    }, 300);
+    }, 500);
 })

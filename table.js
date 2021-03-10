@@ -12,12 +12,12 @@ const item = `
   <div class="table-col">Enabled</div>
   <div class="table-col">Enabled</div>
   <div class="table-col settings-menu__wrapper">
-    settings
-    <div class="settings-menu">
-      <div class="settings-menu__item settings-menu__item--view">View</div>
-      <div class="settings-menu__item settings-menu__item--edit">Edit</div>
-    </div>
-  </div>
+                <img class="settings__icon" src="./setting-lines.svg" alt="settings" />
+                <div class="settings-menu">
+                  <div class="settings-menu__item settings-menu__item--view">View</div>
+                  <div class="settings-menu__item settings-menu__item--edit">Edit</div>
+                </div>
+              </div>
 </div>
 </li>
 `;
@@ -39,7 +39,6 @@ const addEventlisteners = () => {
     })
   })
 }
-
 addEventlisteners();
 document.querySelector('#viewMoreBtn').addEventListener('click', () => {
   for (let i = 0; i < 10; i++) {

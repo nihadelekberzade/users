@@ -15,6 +15,18 @@
           <label for="voen">VÖEN</label>
           <input type="text" id="voen" />
         </div>
+        <div class="input-field input-field--checkbox">
+          <label for="status">Status</label>
+          <input type="checkbox" id="status" />
+        </div>
+        <div class="input-field input-field--select">
+          <label for="status">Type</label>
+          <select name="type" id="type">
+            <option value="2" selected>2</option>
+            <option value="8">8</option>
+            <option value="18">18</option>
+          </select>
+        </div>
         <div class="input-field">
           <label for="name">Display Name</label>
           <input type="text" id="name" />
@@ -24,20 +36,20 @@
           <input type="text" id="address" />
         </div>
         <div class="input-field">
-          <label for="address">Cachebox Factory Number</label>
-          <input type="text" id="address" />
+          <label for="cachebox">Cachebox Factory Number</label>
+          <input type="text" id="cachebox" />
         </div>
         <div class="input-field">
-          <label for="address">Paid at</label>
-          <input type="date" id="address" />
+          <label for="paid">Paid at</label>
+          <input type="date" id="paid" />
         </div>
         <div class="input-field">
-          <label for="address">Expire at</label>
-          <input type="date" id="address" />
+          <label for="expire">Expire at</label>
+          <input type="date" id="expire" />
         </div>
         <div class="input-field">
-          <label for="address">Note</label>
-          <input type="text" id="address" />
+          <label for="note">Note</label>
+          <input type="text" id="note" />
         </div>
 
         <div class="buttons">
@@ -163,7 +175,7 @@
               <div class="table-col">Enabled</div>
               <div class="table-col">Enabled</div>
               <div class="table-col settings-menu__wrapper">
-                settings
+                <img class="settings__icon" src="./setting-lines.svg" alt="settings" />
                 <div class="settings-menu">
                   <div class="settings-menu__item settings-menu__item--view">View</div>
                   <div class="settings-menu__item settings-menu__item--edit">Edit</div>
