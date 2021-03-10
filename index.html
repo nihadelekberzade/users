@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./sass/style.min.css" />
+  </head>
+  <body>
+    <div class="sidebar sidebar--create-user">
+      <h2 class="section-title">User Properties</h2>
+      <div class="form">
+        <div class="input-field">
+          <label for="voen">VÖEN</label>
+          <input type="text" id="voen" />
+        </div>
+        <div class="input-field">
+          <label for="name">Display Name</label>
+          <input type="text" id="name" />
+        </div>
+        <div class="input-field">
+          <label for="address">Object address</label>
+          <input type="text" id="address" />
+        </div>
+        <div class="input-field">
+          <label for="address">Cachebox Factory Number</label>
+          <input type="text" id="address" />
+        </div>
+        <div class="input-field">
+          <label for="address">Paid at</label>
+          <input type="date" id="address" />
+        </div>
+        <div class="input-field">
+          <label for="address">Expire at</label>
+          <input type="date" id="address" />
+        </div>
+        <div class="input-field">
+          <label for="address">Note</label>
+          <input type="text" id="address" />
+        </div>
+
+        <div class="buttons">
+          <button class="btn btn--primary">Create User</button>
+          <button class="btn btn--secondary" id="closeCreateSidebar">Cancel</button>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar sidebar--edit-user">
+      <h2 class="section-title">User Properties</h2>
+      <div class="form">
+        <div class="input-field">
+          <label for="voen">VÖEN</label>
+          <input type="text" id="voen" />
+        </div>
+        <div class="input-field">
+          <label for="name">Display Name</label>
+          <input type="text" id="name" />
+        </div>
+        <div class="input-field">
+          <label for="address">Object address</label>
+          <input type="text" id="address" />
+        </div>
+        <div class="input-field">
+          <label for="address">Cachebox Factory Number</label>
+          <input type="text" id="address" />
+        </div>
+        <div class="input-field">
+          <label for="address">Paid at</label>
+          <input type="date" id="address" />
+        </div>
+        <div class="input-field">
+          <label for="address">Expire at</label>
+          <input type="date" id="address" />
+        </div>
+        <div class="input-field">
+          <label for="address">Note</label>
+          <input type="text" id="address" />
+        </div>
+        <div class="buttons">
+          <button class="btn btn--primary">Publish Changes</button>
+          <button class="btn btn--secondary" id="closeEditSidebar">Cancel</button>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar sidebar--view-user">
+      <div class="sidebar__header">
+        <h2 class="sidebar__title">samir</h2>
+        <button class="btn btn--secondary" id="swipeToEdit">Edit</button>
+      </div>
+      <div class="sidebar__groups">
+        <div class="group">
+          <p class="group__label">Name</p>
+          <p class="group__text">username99</p>
+        </div>
+        <div class="group">
+          <p class="group__label">Status</p>
+          <p class="group__text">active</p>
+        </div>
+        <div class="group">
+          <p class="group__label">Type</p>
+          <p class="group__text">active</p>
+        </div>
+        <div class="group">
+          <p class="group__label">Company name</p>
+          <p class="group__text">step</p>
+        </div>
+        <div class="group">
+          <p class="group__label">Object Address</p>
+          <p class="group__text">baku</p>
+        </div>
+        <div class="group">
+          <p class="group__label">Factory Number</p>
+          <p class="group__text">123121</p>
+        </div>
+        <div class="group">
+          <p class="group__label">Paid</p>
+          <p class="group__text">1/02/2021</p>
+        </div>
+        <div class="group">
+          <p class="group__label">Expire</p>
+          <p class="group__text">1/02/2021</p>
+        </div>
+        <div class="group">
+          <p class="group__label">Note</p>
+          <p class="group__text">salam aleykum</p>
+        </div>
+      </div>
+      <button class="btn btn--secondary" id="closeViewSidebar">Close</button>
+    </div>
+    <div class="users-section">
+      <h2 class="section-title">Users</h2>
+      <div class="row">
+        <div class="search">
+          <input type="text" placeholder="Find a user" />
+          <div class="icon"></div>
+        </div>
+        <button class="btn btn--primary createUser">Create user</button>
+      </div>
+      <div class="user-table">
+        <div class="table-row table-header">
+          <div class="table-col">display name</div>
+          <div class="table-col">status</div>
+          <div class="table-col">type</div>
+          <div class="table-col">company name</div>
+          <div class="table-col">object address</div>
+          <div class="table-col">factory number</div>
+          <div class="table-col">paid</div>
+          <div class="table-col">expire</div>
+          <div class="table-col">note</div>
+          <div class="table-col"></div>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <div class="table-row">
+              <div class="table-col">samir</div>
+              <div class="table-col">username99</div>
+              <div class="table-col">New</div>
+              <div class="table-col">Internal</div>
+              <div class="table-col">Enabled</div>
+              <div class="table-col">Enabled</div>
+              <div class="table-col">Enabled</div>
+              <div class="table-col">Enabled</div>
+              <div class="table-col">Enabled</div>
+              <div class="table-col settings-menu__wrapper">
+                settings
+                <div class="settings-menu">
+                  <div class="settings-menu__item settings-menu__item--view">View</div>
+                  <div class="settings-menu__item settings-menu__item--edit">Edit</div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="txt-center">
+        <button class="btn btn--primary" id="viewMoreBtn">View More</button>
+      </div>
+    </div>
+    <script src="./table.js"></script>
+    <script src="./sidebar.js"></script>
+  </body>
+</html>
